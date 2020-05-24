@@ -13,6 +13,10 @@
 		6336C79D247114700014F751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6336C79B247114700014F751 /* Main.storyboard */; };
 		6336C79F247114710014F751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6336C79E247114710014F751 /* Assets.xcassets */; };
 		6336C7A2247114710014F751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6336C7A0247114710014F751 /* LaunchScreen.storyboard */; };
+		634D29A3247A14820007C7A1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634D29A2247A14820007C7A1 /* Question.swift */; };
+		634D29A5247A154A0007C7A1 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634D29A4247A154A0007C7A1 /* QuestionBank.swift */; };
+		634D29AD247A22DE0007C7A1 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 634D29AA247A22DD0007C7A1 /* ProgressHUD.bundle */; };
+		634D29AE247A22DE0007C7A1 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 634D29AB247A22DE0007C7A1 /* ProgressHUD.m */; };
 		D0E9C7F3343AC8CB75CB65DC /* Pods_HelloMyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04484008D91D47534B8F6FD /* Pods_HelloMyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,12 @@
 		6336C79E247114710014F751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6336C7A1247114710014F751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6336C7A3247114710014F751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634D29A2247A14820007C7A1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		634D29A4247A154A0007C7A1 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		634D29A9247A22DD0007C7A1 /* HelloMyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloMyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		634D29AA247A22DD0007C7A1 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		634D29AB247A22DE0007C7A1 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		634D29AC247A22DE0007C7A1 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B04484008D91D47534B8F6FD /* Pods_HelloMyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloMyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FBCA3783AB491156CA1E1D /* Pods-HelloMyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMyApp.debug.xcconfig"; path = "Target Support Files/Pods-HelloMyApp/Pods-HelloMyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FB34E9D787DB509084DA23F9 /* Pods-HelloMyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMyApp.release.xcconfig"; path = "Target Support Files/Pods-HelloMyApp/Pods-HelloMyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +73,8 @@
 		6314E5CD247751C300D3B1E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				634D29A2247A14820007C7A1 /* Question.swift */,
+				634D29A4247A154A0007C7A1 /* QuestionBank.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +131,7 @@
 		6336C794247114700014F751 /* HelloMyApp */ = {
 			isa = PBXGroup;
 			children = (
+				634D29A6247A21D40007C7A1 /* Supporting Files */,
 				6314E5CF247751E000D3B1E6 /* Resources */,
 				6314E5CE247751CA00D3B1E6 /* ViewController */,
 				6314E5CD247751C300D3B1E6 /* Model */,
@@ -129,6 +142,17 @@
 				6336C7A3247114710014F751 /* Info.plist */,
 			);
 			path = HelloMyApp;
+			sourceTree = "<group>";
+		};
+		634D29A6247A21D40007C7A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				634D29AA247A22DD0007C7A1 /* ProgressHUD.bundle */,
+				634D29AC247A22DE0007C7A1 /* ProgressHUD.h */,
+				634D29AB247A22DE0007C7A1 /* ProgressHUD.m */,
+				634D29A9247A22DD0007C7A1 /* HelloMyApp-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DD24945BDFE72D4A19AF5876 /* Frameworks */ = {
@@ -173,6 +197,7 @@
 				TargetAttributes = {
 					6336C791247114700014F751 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -199,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634D29AD247A22DE0007C7A1 /* ProgressHUD.bundle in Resources */,
 				6336C7A2247114710014F751 /* LaunchScreen.storyboard in Resources */,
 				6336C79F247114710014F751 /* Assets.xcassets in Resources */,
 				6336C79D247114700014F751 /* Main.storyboard in Resources */,
@@ -254,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634D29AE247A22DE0007C7A1 /* ProgressHUD.m in Sources */,
 				6336C79A247114700014F751 /* ViewController.swift in Sources */,
+				634D29A3247A14820007C7A1 /* Question.swift in Sources */,
 				6336C796247114700014F751 /* AppDelegate.swift in Sources */,
+				634D29A5247A154A0007C7A1 /* QuestionBank.swift in Sources */,
 				6336C798247114700014F751 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +432,7 @@
 			baseConfigurationReference = C8FBCA3783AB491156CA1E1D /* Pods-HelloMyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L5KM4GF42;
 				INFOPLIST_FILE = HelloMyApp/Info.plist;
@@ -412,6 +442,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huup.HelloMyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloMyApp/Supporting Files/HelloMyApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -422,6 +454,7 @@
 			baseConfigurationReference = FB34E9D787DB509084DA23F9 /* Pods-HelloMyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L5KM4GF42;
 				INFOPLIST_FILE = HelloMyApp/Info.plist;
@@ -431,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huup.HelloMyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloMyApp/Supporting Files/HelloMyApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
